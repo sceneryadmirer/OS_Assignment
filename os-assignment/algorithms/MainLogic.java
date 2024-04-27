@@ -4,11 +4,11 @@ import PageTable.PageTable;
 import cache.Tlb;
 import util.Helper;
 import util.Reader;
+import util.Constans;
 
 public class MainLogic {
 
-    private static final Logger logger = new Logger(
-            "C:\\Users\\ASUS\\Desktop\\os-assignment\\os-assignment\\files\\log.txt");
+    private static final Logger logger = new Logger(Constans.LOG_FILE);
 
     public static void processAddresses(Reader addressReader, Tlb tlb, Helper helper,
                                         PhysicalMemory physicalMemory, PageTable pageTable) {
